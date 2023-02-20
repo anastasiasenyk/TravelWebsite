@@ -19,34 +19,45 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                 <a class="header-link" href="#">Blog</a>
                 <button class="blog-btn">Blog</button>
               </nav>
-
          </header>
-        <main>
+         <main>
             <section class="banner">
                 <h1 class = "banner-header"> Discover Your Life, Travel</h1>
                 <p class = "banner-text"> Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
             </section>
-            <section class="dynamic-choosing">
+            <section class="choose-trip">
                 <div>
-                    <div class="choose-section">
-                        <button class="flight-btn">
-                            <img class="sign-plane-img" src="./images/signs/AirplaneBlueDiagonal.svg" alt="airplane" />
-                            <span class="flight-label">Flight</span>
+                    <div class="choose-flight-hotel">
+                        <button class="choose-flight-btn">
+                             <img class="choose-sign-img" src="./images/signs/Ellipse2.svg" alt="frame" />
+                             <img class="choose-sign-img" src="./images/signs/AirplaneBlueDiagonal.svg" alt="airplane" />
+                            <span class="choose-flight-label">Flight</span>
                         </button>
-                        <button class="hotel-btn">
-                            <img class="sign-hotel-img" src="./images/signs/Hotel.svg" alt="hotel" />
-                            <span class="hotel-label">Hotel</span>
+                        <button class="choose-hotel-btn">
+                            <img class="choose-sign-img" src="./images/signs/Ellipse2.svg" alt="frame" />
+                            <img class="choose-sign-img" src="./images/signs/Hotel.svg" alt="hotel" />
+                            <span class="choose-hotel-label">Hotel</span>
                         </button>
                     </div>
                     <div class="choose-city">
-                        <div class = "living-from">
-                            <span class="living-from-label">Living From</span>
-                            <input type="text" id="city-to-leave" name="city">
+                        <div class = "leave-from">
+                            <span class="leave-from-label">Living From</span>
+                            <select name="choose-city" id="city-to-leave">
+                                <option value="">Choose city</option>
+                                <option value="Lviv">Lviv</option>
+                                <option value="Odesa">Odesa</option>
+                                <option value="Ternopil">Ternopil</option>
+                            </select>
                         </div>
-                        <img class="sign-plane-img" src="./images/signs/AirplaneGreyForward.svg" alt="airplane" />
+                        <img class="choose-sign-img" src="./images/signs/AirplaneGreyForward.svg" alt="airplane" />
                         <div class = "going-to">
                             <span class="going-to-label">Going To</span>
-                            <input type="text" id="city-going-to" name="city">
+                            <select name="choose-city" id="city-goig-to">
+                                <option value="">Choose city</option>
+                                <option value="Lviv">Lviv</option>
+                                <option value="Odesa">Odesa</option>
+                                <option value="Ternopil">Ternopil</option>
+                            </select>
                         </div>
                     </div>
                     <div class="choose-date">
@@ -254,7 +265,7 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                 <button class="register">Register Today</button>
             </section>
         </main>
-        <footer>
+         <footer>
             <span class="company-info">© 2022 Treloo LLC - All right reserved.</span>
             <nav class="footer-nav">
                 <a class="footer-link" href="#">Review</a>
