@@ -32,22 +32,19 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
          </header>
          <main>
             <section class="choose-trip">
-                <div>
                     <div class="choose-flight-hotel">
-                        <div class="choose-flight-tab">
-                             <img class="choose-sign-img" src="./images/signs/Ellipse2.svg" alt="frame" />
+                        <nav>
                              <img class="choose-sign-img" src="./images/signs/AirplaneBlueDiagonal.svg" alt="airplane" />
                             <span class="choose-flight-label">Flight</span>
-                        </div>
-                        <div class="choose-hotel-tab">
-                            <img class="choose-sign-img" src="./images/signs/Ellipse2.svg" alt="frame" />
+                        </nav>
+                        <nav>
                             <img class="choose-sign-img" src="./images/signs/Hotel.svg" alt="hotel" />
                             <span class="choose-hotel-label">Hotel</span>
-                        </div>
+                        </nav>
                     </div>
                     <div class="choose-city-date">
                         <div class="choose-city">
-                            <div class = "leave-from">
+                            <div class = "select">
                                 <span class="leave-from-label">Living From</span>
                                 <select name="choose-city" id="city-to-leave">
                                     <option value="">Choose city</option>
@@ -56,8 +53,9 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                                     <option value="Ternopil">Ternopil</option>
                                 </select>
                             </div>
+                            <img class="circle-img" src="./images/signs/Ellipse2.svg" alt="circle" />
                             <img class="choose-sign-img" src="./images/signs/AirplaneGreyForward.svg" alt="airplane" />
-                            <div class = "going-to">
+                            <div class = "select">
                                 <span class="going-to-label">Going To</span>
                                 <select name="choose-city" id="city-goig-to">
                                     <option value="">Choose city</option>
@@ -68,22 +66,29 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                             </div>
                         </div>
                         <div class="choose-date">
-                            <div class = "leave">
-                                <span class="leave-label">Leave</span>
+                            <div class = "select">
+                                <div class="text-img">
+                                    <span class="leave-label">Leave</span>
+                                    <img class="choose-sign-img" src="./images/signs/AirplaneBlueForward.svg" alt="airplane" />
+                                </div>
+
                                 <input type="date" id="start" name="trip-start">
                             </div>
-                            <img class="sign-calendar-img" src="./images/signs/Planner.svg" alt="calendar" />
-                            <div class = "return">
-                                <span class="return-label">Return</span>
+                            <img class="circle-img" src="./images/signs/Ellipse2.svg" alt="circle" />
+                            <img class="choose-sign-img" src="./images/signs/Planner.svg" alt="calendar" />
+                            <div class = "select">
+                                <div class="text-img">
+                                    <span class="return-label">Return</span>
+                                    <img class="plane-img" src="./images/signs/AirplaneBlueBackward.svg" alt="plane" />
+                                </div>
                                 <input type="date" id="finish" name="trip-finish">
                             </div>
                         </div>
                         <button class="make-search-btn">
-                        <img class="make-search1-img" src="./images/signs/Ellipse.svg" alt="loop" />
-                        <img class="make-search2-img" src="./images/signs/Line.svg" alt="loop" />
-                    </button>
+                            <img class="make-search1-img" src="./images/signs/Ellipse.svg" alt="loop" />
+                            <img class="make-search2-img" src="./images/signs/Line.svg" alt="loop" />
+                        </button>
                     </div>
-                </div>
             </section>
 <!--            <section class = "special-offers">-->
 <!--                <h1 class = "section-header">Special Upcoming Offers</h1>-->
