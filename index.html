@@ -14,27 +14,25 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
     </head>
     <body>
          <header class="header">
-             <nav class="header-menu">
-                 <h2 class="logo">Treloo</h2>
-                  <nav class="header-nav">
-                    <a class="header-link" href="#">Review</a>
-                    <a class="header-link" href="#">Tips</a>
-                    <a class="header-link" href="#">Alerts</a>
-                    <a class="header-link" href="#">Blog</a>
-                    <a class="header-link" href="#">Blog</a>
-                  </nav>
-             </nav>
+             <h2 class="logo">Treloo</h2>
+              <nav class="header-nav">
+                <a class="header-link" href="#">Review</a>
+                <a class="header-link" href="#">Tips</a>
+                <a class="header-link" href="#">Alerts</a>
+                <a class="header-link" href="#">Blog</a>
+                <a class="header-link" href="#">Blog</a>
+              </nav>
+         </header>
+         <main>
+             <section class="background-img"></section>
              <section class="banner">
                 <h1 class = "banner-header"> Discover Your Life, Travel <br> Where You Want</h1>
                 <p class = "banner-text"> Would you explore nature paradise in the world, let’s find the best <br> destination in world with us.</p>
              </section>
-<!--             <img class="background-img" src="./images/background.svg" alt="Background"/>-->
-         </header>
-         <main>
             <section class="choose-trip">
                     <div class="choose-flight-hotel">
                         <nav>
-                             <img class="choose-sign-img" src="./images/signs/AirplaneBlueDiagonal.svg" alt="airplane" />
+                             <img class="choose-airplane-img" src="./images/signs/AirplaneBlueDiagonal.svg" alt="airplane" />
                             <span class="choose-flight-label">Flight</span>
                         </nav>
                         <nav>
@@ -44,18 +42,17 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                     </div>
                     <div class="choose-city-date">
                         <div class="choose-city">
-                            <div class = "select">
-                                <span class="leave-from-label">Living From</span>
+                            <div class = "city-select">
+                                <span class="label">Living From</span>
                                 <select name="choose-city" id="city-to-leave">
                                     <option value="">Choose city</option>
                                     <option value="Lviv">Lviv</option>
                                     <option value="Ternopil">Ternopil</option>
                                 </select>
                             </div>
-                            <img class="circle-img" src="./images/signs/Ellipse2.svg" alt="circle" />
-                            <img class="choose-sign-img" src="./images/signs/AirplaneGreyForward.svg" alt="airplane" />
-                            <div class = "select">
-                                <span class="going-to-label">Going To</span>
+                            <img class="choose-sign-img" src="./images/signs/Plane_with_border.png" alt="airplane" >
+                            <div class = "city-select">
+                                <span class="label">Going To</span>
                                 <select name="choose-city" id="city-goig-to">
                                     <option value="">Choose city</option>
                                     <option value="Lviv">Lviv</option>
@@ -64,26 +61,24 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                             </div>
                         </div>
                         <div class="choose-date">
-                            <div class = "select">
+                            <div class = "date-select">
                                 <div class="text-img">
-                                    <span class="leave-label">Leave</span>
-                                    <img class="choose-sign-img" src="./images/signs/AirplaneBlueForward.svg" alt="airplane" />
+                                    <span class="label">Leave</span>
+                                    <img class="label-img" src="./images/signs/AirplaneBlueForward.svg" alt="airplane" />
                                 </div>
-
                                 <input type="date" id="start" name="trip-start">
                             </div>
-                            <img class="circle-img" src="./images/signs/Ellipse2.svg" alt="circle" />
-                            <img class="choose-sign-img" src="./images/signs/Planner.svg" alt="calendar" />
-                            <div class = "select">
+                            <img class="choose-sign-img" src="./images/signs/Calendar_with_border.png" alt="calendar" >
+                            <div class = "date-select">
                                 <div class="text-img">
-                                    <span class="return-label">Return</span>
-                                    <img class="plane-img" src="./images/signs/AirplaneBlueBackward.svg" alt="plane" />
+                                    <span class="label">Return</span>
+                                    <img class="label-img" src="./images/signs/AirplaneBlueBackward.svg" alt="plane" />
                                 </div>
                                 <input type="date" id="finish" name="trip-finish">
                             </div>
                         </div>
                         <button class="make-search-btn">
-                            <img class="make-search1-img" src="./images/signs/icons8-search.svg" alt="search" />
+                            <img class="make-search-img" src="./images/signs/icons8-search.svg" alt="search" />
                         </button>
                     </div>
             </section>
@@ -96,8 +91,10 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                 </nav>
                 <div class = "offers">
                     <article class="offer">
-                        <img class="article-img" src="./images/loga-sea.svg" alt="loga-sea" />
-                        <span class="vertical-span">14 FEB 2022</span>
+                        <div class="img-date">
+                            <img class="article-img" src="./images/loga-sea.svg" alt="loga-sea" />
+                            <span class="vertical-span">14 FEB 2022</span>
+                        </div>
                         <div class="offer-details">
                             <div class="offer-type">
                                 <span class="red-offer-type">Relax</span>
@@ -114,8 +111,10 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                         </div>
                     </article>
                     <article class="offer">
-                        <img class="article-img" src="./images/ansgar-scheffold.svg" alt="ansgar-scheffold" />
-                        <span class="vertical-span">18 JUN 2022</span>
+                        <div class="img-date">
+                            <img class="article-img" src="./images/ansgar-scheffold.svg" alt="ansgar-scheffold" />
+                            <span class="vertical-span">18 JUN 2022</span>
+                        </div>
                         <div class="offer-details">
                             <div class="offer-type">
                                 <span class="blue-offer-type">Adventure</span>
@@ -132,8 +131,10 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
                         </div>
                     </article>
                     <article class="offer">
-                        <img class="article-img" src="./images/lona-x.svg" alt="lona-x" />
-                        <span class="vertical-span">22 DEC 2022</span>
+                        <div class="img-date">
+                            <img class="article-img" src="./images/lona-x.svg" alt="lona-x" />
+                            <span class="vertical-span">22 DEC 2022</span>
+                        </div>
                         <div class="offer-details">
                             <div class="offer-type">
                                 <span class="red-offer-type">Relax</span>
@@ -154,18 +155,18 @@ https://www.figma.com/file/IPxyIrcZM3j4cMgMDSYzBp/Travel-Agency-Web-UI-(Communit
 <!--            <section class="encouraging-users">-->
 <!--                <div class="company-numbers">-->
 <!--                    <img class="sea-img" src="./images/any-corner.svg" alt="sea"/>-->
-<!--                    <div>-->
-<!--                        <h4 class="bold-text">300+</h4>-->
-<!--                        <span>DESTINATIONS</span>-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <h4 class="bold-text">5000+</h4>-->
-<!--                        <span>TOURISTS</span>-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <h4 class="bold-text">150+</h4>-->
-<!--                        <span>HOTELS</span>-->
-<!--                    </div>-->
+<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h4 class="bold-text">300+</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>DESTINATIONS</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h4 class="bold-text">5000+</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>TOURISTS</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h4 class="bold-text">150+</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span>HOTELS</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
 <!--                </div>-->
 <!--                <div class="text-encouraging-users">-->
 <!--                    <h1 class="section-header">Travel Any Corner of <br> The World With Us</h1>-->
